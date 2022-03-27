@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikselburg</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <a class="header-logo" href="#"></a>
+        <ul class="header-ul">
+            <li><a class="header-ul-item active" href="#">Услуги</a></li>
+            <li><a class="header-ul-item" href="#">Оборудование</a></li>
+            <li><a class="header-ul-item" href="#">Продукция</a></li>
+            <li><a class="header-ul-item" href="#">Новости</a></li>
+            <li><a class="header-ul-item" href="#">О нас</a></li>
+            <li><a class="header-ul-item" href="#">Контакты</a></li>
+            <li><a class="header-ul-item header-ul-tel" href="tel:+78123808513">+7 (812) 380-85-13</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <div class="menu__box">
+                <h3 class="menu__box-title">Меню</h3>
+                <ul class="header-ul-mobile">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Оборудование</a></li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="overlay"></div>
+        <video autoplay muted loop id="myVideo">
+            <source src="video/3.mp4" type="video/mp4">
+        </video>
+        <div class="services-inner">
+            <a class="services-inner-back" href="#"><img src="img/arrow-left.svg" alt="arrow"></a>
+            <h3 class="services-inner-title"> <span>Услуги</span> <br> Лазерная резка</h3>
+            <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл толщиной от
+                0,35 мм до 30 мм способны
+                разрезать металл толщиной.</p>
+            <div class="services-inner-statistics">
+                <div class="services-inner-statistics-item">
+                    <span>
+                        < 2</span> <span>Дней на выполнение
+                            заказа
+                    </span>
+                </div>
+                <div class="services-inner-statistics-item">
+                    <span>684</span>
+                    <span>Выполненных заказа</span>
+                </div>
+            </div>
+            <div class="services-inner-footer">
+                <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                <a class="transparent-btn" href="#">Подробнее</a>
+            </div>
+        </div>
+        <a class="more-btn" href="#price-list"><img src="img/arrow-down.svg" alt="arrow"> узнать больше</a>
+    </section>
+
+    <section id="price-list" class="table">
+        <h3 class="table-title">Прайс-лист</h3>
+        <div class="table-wrapper">
+            <div class="table-inner">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Толщина</th>
+                            <th>Черная <br> сталь</th>
+                            <th>Оцинкованная <br> сталь</th>
+                            <th>Нержавеющая <br> сталь</th>
+                            <th>Алюминий</th>
+                            <th>Медь</th>
+                            <th>Титан</th>
+                            <th>Латунь</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                        <tr>
+                            <td>1 мм</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                            <td>9.25 ₽/м</td>
+                            <td>9 ₽/м</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a class="price-list-btn white-btn" href="#"><img src="img/document.svg" alt="document"> Скачать прайс-лист</a>
+    </section>
+
+    <section class="equipment">
+        <div class="equipment-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide equipment-item" style="background-image: url(img/laser-slider-img-1.png),
+                url(img/laser-slider-bg-1.png);">
+                    <h3 class="equipment-item-title"> <span>Оборудование</span> <br> Trulaser Tube 7000 Fiber</h3>
+                    <p class="equipment-item-text">Обеспечивает максимально точный разрез листового металла. Также он
+                        обладает самой высокой скоростью, благодаря линейной технологии привода.</p>
+                    <div class="equipment-item-statistics">
+                        <div class="equipment-item-statistics-col">
+                            <span>1 – 30 мм</span>
+                            <span>Рабочая зона</span>
+                        </div>
+                        <div class="equipment-item-statistics-col">
+                            <span>6000 w</span>
+                            <span>Мощность</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide equipment-item" style="background-image: url(img/laser-slider-img-2.png),
+                url(img/laser-slider-bg-2.png);">
+                    <h3 class="equipment-item-title"> <span>Оборудование</span> <br> Trulaser Tube 7000 Fiber</h3>
+                    <p class="equipment-item-text">Обеспечивает максимально точный разрез листового металла. Также он
+                        обладает самой высокой скоростью, благодаря линейной технологии привода.</p>
+                    <div class="equipment-item-statistics">
+                        <div class="equipment-item-statistics-col">
+                            <span>1 – 30 мм</span>
+                            <span>Рабочая зона</span>
+                        </div>
+                        <div class="equipment-item-statistics-col">
+                            <span>6000 w</span>
+                            <span>Мощность</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide equipment-item" style="background-image: url(img/laser-slider-img-3.png),
+                url(img/laser-slider-bg-3.png);">
+                    <h3 class="equipment-item-title"> <span>Оборудование</span> <br> Trulaser Tube 7000 Fiber</h3>
+                    <p class="equipment-item-text">Обеспечивает максимально точный разрез листового металла. Также он
+                        обладает самой высокой скоростью, благодаря линейной технологии привода.</p>
+                    <div class="equipment-item-statistics">
+                        <div class="equipment-item-statistics-col">
+                            <span>1 – 30 мм</span>
+                            <span>Рабочая зона</span>
+                        </div>
+                        <div class="equipment-item-statistics-col">
+                            <span>6000 w</span>
+                            <span>Мощность</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide equipment-item" style="background-image: url(img/laser-slider-img-4.png),
+                url(img/laser-slider-bg-4.png);">
+                    <h3 class="equipment-item-title"> <span>Оборудование</span> <br> Trulaser Tube 7000 Fiber</h3>
+                    <p class="equipment-item-text">Обеспечивает максимально точный разрез листового металла. Также он
+                        обладает самой высокой скоростью, благодаря линейной технологии привода.</p>
+                    <div class="equipment-item-statistics">
+                        <div class="equipment-item-statistics-col">
+                            <span>1 – 30 мм</span>
+                            <span>Рабочая зона</span>
+                        </div>
+                        <div class="equipment-item-statistics-col">
+                            <span>6000 w</span>
+                            <span>Мощность</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="technology">
+        <div class="technology-img">
+            <img src="img/laser-technology.png" alt="technology">
+        </div>
+        <div class="technology-info">
+            <h3 class="technology-title">Технология резки металла</h3>
+            <p class="technology-text">Наша производственная мощность дает возможность
+                нам осуществлять обработку большого списка материалов: броневая, черная, углеродистая и нержавеющая
+                сталь, алюминий, титан, латунь, медь, а также резка пластика, резины, плитки, акрила, оргстекла и камня.
+            </p>
+            <p class="technology-text">Технологии, которыми пользуется наша компания, являются передовыми в данной сфере
+                и постоянно
+                совершенствуются. Новейшие немецкие станки, которые имеют числовое программное управление, обеспечат
+                отменное качество продукции.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h3 class="products-title">Готовая продукция</h3>
+        <div class="products-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide products-slider-item">
+                    <img class="products-slider-img" src="img/laser-product-img-1.png" alt="img-1">
+                    <h5 class="products-slider-title">Подставки для мозгов</h5>
+                    <p class="products-slider-text">Войлок, 50*30*0,5 см</p>
+                    <span class="products-slider-price">500 ₽</span>
+                </a>
+                <a href="#" class="swiper-slide products-slider-item">
+                    <img class="products-slider-img" src="img/laser-product-img-2.png" alt="img-2">
+                    <h5 class="products-slider-title">Небесные горки</h5>
+                    <p class="products-slider-text">Дерево, 40*20*1 см</p>
+                    <span class="products-slider-price">1000 ₽</span>
+                </a>
+                <a href="#" class="swiper-slide products-slider-item">
+                    <img class="products-slider-img" src="img/laser-product-img-3.png" alt="img-3">
+                    <h5 class="products-slider-title">Manchester Bee Coaster</h5>
+                    <p class="products-slider-text">Дерево, 10*10*1 см</p>
+                    <span class="products-slider-price">300 ₽</span>
+                </a>
+                <a href="#" class="swiper-slide products-slider-item">
+                    <img class="products-slider-img" src="img/laser-product-img-4.png" alt="img-4">
+                    <h5 class="products-slider-title">Свадебные подставки</h5>
+                    <span class="products-slider-text">Металл, 66*35*28 см</span>
+                    <span class="products-slider-price">1000 ₽</span>
+                </a>
+                <div class="swiper-slide products-slider-item products-slider-item-last">
+                    <span class="products-slider-quantity">+500 товаров <br>
+                        в нашем каталоге</span>
+                    <a class="products-slider-btn red-btn" href="#">В каталог</a>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages-inner">
+            <h3 class="advantages-title">Преимущества лазерной резки</h3>
+            <div class="advantages-wrap">
+                <div class="advantages-item">
+                    <span class="advantages-item-num">01</span>
+                    <h5 class="advantages-item-title">Высокое качество реза</h5>
+                    <p class="advantages-item-text">Благодаря минимальному размеру светового пятна обеспечивается
+                        тонкий шов при резке</p>
+                </div>
+                <div class="advantages-item">
+                    <span class="advantages-item-num">02</span>
+                    <h5 class="advantages-item-title">Скорость работы</h5>
+                    <p class="advantages-item-text">Автономный режим ускоряет выполнение заказов и сокращает время на
+                        тех. обслуживание</p>
+                </div>
+                <div class="advantages-item">
+                    <span class="advantages-item-num">03</span>
+                    <h5 class="advantages-item-title">Постоянство качества</h5>
+                    <p class="advantages-item-text">Автоматический процесс резки позволяет получать стабильный
+                        достойнный результат</p>
+                </div>
+                <div class="advantages-item">
+                    <span class="advantages-item-num">04</span>
+                    <h5 class="advantages-item-title">Низкая цена</h5>
+                    <p class="advantages-item-text">Налаженный процесс производства позволяет обеспечить доступную цену
+                    </p>
+                </div>
+            </div>
+            <div class="advantages-btns">
+                <a class="red-btn" href="#">Заказать</a>
+                <a class="grey-btn" href="#"><img src="img/comment.svg" alt="comment"> Связаться <span>с нами</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products examples">
+        <h3 class="products-title">Примеры работ</h3>
+        <div class="products-slider examples-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide products-slider-item examples-slider-item">
+                    <img class="products-slider-img examples-slider-img" src="img/laser-job-img-1.png" alt="img-1">
+                    <h5 class="products-slider-title">Металлический мост </h5>
+                    <p class="products-slider-text examples-slider-text">Декаротивный деревянный мост с металлическими украшениями, лакированный, 20*30*45 см.</p>
+                </a>
+                <a href="#" class="swiper-slide products-slider-item examples-slider-item">
+                    <img class="products-slider-img examples-slider-img" src="img/laser-job-img-2.png" alt="img-2">
+                    <h5 class="products-slider-title">Время летит, часы</h5>
+                    <p class="products-slider-text examples-slider-text">Деревянные настенные часы, декорированные с помощью лазерной резки с металлическим механизмом. </p>
+                </a>
+                <a href="#" class="swiper-slide products-slider-item examples-slider-item">
+                    <img class="products-slider-img examples-slider-img" src="img/laser-job-img-3.png" alt="img-3">
+                    <h5 class="products-slider-title">Национальные парки Coasters</h5>
+                    <p class="products-slider-text examples-slider-text">Пробковые подставки с монограммй , 
+                        деревянные </p>
+                </a>
+                <div class="swiper-slide products-slider-item products-slider-item-last examples-slider-item-last">
+                    <span class="products-slider-quantity">+500 примеров работ <br>
+                        в нашем каталоге</span>
+                    <a class="products-slider-btn red-btn" href="#">В каталог</a>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="big-red-btn-wrap">
+        <a href="#" class="big-red-btn">Заказать лазерную резку</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-lists footer-services">
+                    <ul>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Лазерная резка</a>
+                        </li>
+                        <li>
+                            <a href="#">Пробивка металла</a>
+                        </li>
+                        <li>
+                            <a href="#">Гибка металла</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#">Слесарные работы</a>
+                        </li>
+                        <li>
+                            <a href="#">Порошковая окраска</a>
+                        </li>
+                        <li>
+                            <a href="#">Конструкторское бюро</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-lists footer-help">
+                    <ul>
+                        <li>
+                            <a href="#">Помощь</a>
+                        </li>
+                        <li>
+                            <a href="#">Полезные статьи</a>
+                        </li>
+                        <li>
+                            <a href="#">Гарантия и сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="mobile-ul">
+                    <ul>
+                        <li>
+                            <a href="#">Полезные статьи</a>
+                        </li>
+                        <li>
+                            <a href="#">Гарантия и сертификаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <a href="#">Продукция</a>
+                    <a href="#">Оборудование</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© Фиксельбург 2002–2020. Все права защищены</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <div style="display: none;">
+        <div class="box-modal" id="exampleModal">
+            <div class="box-modal_close arcticmodal-close"><img src="img/modal-cancel.svg" alt="cancel"></div>
+            <h3 class="box-modal-title">Заказать лазерную резку</h3>
+            <form class="box-modal-form">
+                <div class="input-container">
+                    <input type="text" required=""/>
+                    <label>Имя</label>		
+                </div>
+                <div class="input-container">
+                    <input type="text" required=""/>
+                    <label>Телефон</label>		
+                </div>
+                <div class="input-container">
+                    <textarea required=""></textarea>
+                    <label>Комментарий</label>		
+                </div>
+                <button>Заказать лазерную резку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1300>
+    <title>Afisha</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="banner">
+        <a class="banner__img" href="#"><img src="img/banner-1.png" alt="banner-1"></a>
+        <a href="#" class="banner__text"><img src="img/banner-icon.svg" alt="banner-icon"> Реклама на сайте</a>
+    </section>
+
+    <header class="header mb60">
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+                <div class="header__search">
+                    <img class="header__search-img" src="img/search.svg" alt="search">
+                    <input class="header__search-input" type="text" placeholder="Поиск...">
+                </div>
+                <div class="header__info">
+                    <div class="header__info-item">
+                        <div><img src="img/sun.svg" alt="sun"></div>
+                        <div>
+                            <div class="sub-2-bold mb4">13°C</div>
+                            <div class="sub-4-bold">23° <span class="opacity-4">14°</span></div>
+                        </div>
+                    </div>
+                    <div class="header__info-item">
+                        <div><img src="img/calendar.svg" alt="calendar"></div>
+                        <div>
+                            <div class="sub-2-bold mb4">Календарь</div>
+                            <div class="sub-4-bold opacity-4">События по дате</div>
+                        </div>
+                    </div>
+                    <div class="header__info-item">
+                        <div><img src="img/language.svg" alt="language"></div>
+                        <div>
+                            <div class="sub-2-bold mb4">Русский</div>
+                            <div class="sub-4-bold opacity-4">O’zbek tili</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__profile">
+                    <div class="header__dropdown">
+                        <img onclick="dropdown()" class="header__dropbtn" src="img/avatar.png" alt="avatar">
+                        <div id="myDropdown" class="header__dropdown-content">
+                            <div class="header__dropdown-top">
+                                <img class="header__dropbtn" src="img/avatar.png" alt="avatar">
+                                <div>
+                                    <div class="sub-2-bold mb4">Хасан Шадияров</div>
+                                    <div class="sub-4-bold opacity-4">Управление аккаунтом</div>
+                                </div>
+                            </div>
+                            <div class="header__dropdown-middle">
+                                <div class="header__dropdown-middle-item lang-choose"><img
+                                        class="header__dropdown-middle-img" src="img/dropdown-lang.svg" alt="lang">
+                                    Язык: <span>Русский</span> <img class="arrow" src="img/right-arrow.svg" alt="arrow">
+                                </div>
+                                <div class="header__dropdown-middle-item town-choose"><img
+                                        class="header__dropdown-middle-img" src="img/dropdown-location.svg"
+                                        alt="location"> Город: <span>Ташкент</span> <img class="arrow"
+                                        src="img/right-arrow.svg" alt="arrow"></div>
+                                <div class="header__dropdown-middle-item"><img class="header__dropdown-middle-img"
+                                        src="img/dropdown-settings.svg" alt="settings"> Настройки</div>
+                                <div class="header__dropdown-middle-item"><img class="header__dropdown-middle-img"
+                                        src="img/dropdown-exit.svg" alt="exit"> Выйти</div>
+                            </div>
+                            <div class="header__dropdown-bottom">
+                                <div class="header__dropdown-bottom-text">Подпишись на наш телеграм</div>
+                                <a class="header__dropdown-bottom-btn" href="#">Перейти <img
+                                        src="img/dropdown-btn-icon.svg" alt="icon"></a>
+                            </div>
+                        </div>
+                        <div id="myDropdown-2" class="header__dropdown-settings">
+                            <div class="header__dropdown-settings-top"><i class="fas fa-chevron-left"></i> Выберите язык
+                            </div>
+                            <div class="header__dropdown-settings-item"><i class="fas fa-check"></i> Русский</div>
+                            <div class="header__dropdown-settings-item">O’zbek</div>
+                        </div>
+                        <div id="myDropdown-3" class="header__dropdown-settings">
+                            <div class="header__dropdown-settings-top"><i class="fas fa-chevron-left"></i> Выберите
+                                город</div>
+                            <div class="header__dropdown-settings-item"><i class="fas fa-check"></i> Ташкент</div>
+                            <div class="header__dropdown-settings-item">Самарканд</div>
+                            <div class="header__dropdown-settings-item">Бухара</div>
+                            <div class="header__dropdown-settings-item">Хива</div>
+                            <div class="header__dropdown-settings-item">Термез</div>
+                            <div class="header__dropdown-settings-item">Коканд</div>
+                            <div class="header__dropdown-settings-item">Нукус</div>
+                            <div class="header__dropdown-settings-item">Карши</div>
+                        </div>
+                    </div>
+                    <button class="header__profile-btn dnone">Войти</button>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__nav">
+                    <a href="#" class="header__nav-item">
+                        <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5" cy="11" r="11" fill="#FF136D" />
+                            <path
+                                d="M15.5013 5V6.33333H14.168V5H8.83464V6.33333H7.5013V5H6.16797V17H7.5013V15.6667H8.83464V17H14.168V15.6667H15.5013V17H16.8346V5H15.5013ZM8.83464 14.3333H7.5013V13H8.83464V14.3333ZM8.83464 11.6667H7.5013V10.3333H8.83464V11.6667ZM8.83464 9H7.5013V7.66667H8.83464V9ZM15.5013 14.3333H14.168V13H15.5013V14.3333ZM15.5013 11.6667H14.168V10.3333H15.5013V11.6667ZM15.5013 9H14.168V7.66667H15.5013V9Z"
+                                fill="#F7F7F7" />
+                        </svg>
+                        Кино
+                    </a>
+                    <a href="#" class="header__nav-item">Театры</a>
+                    <a href="#" class="header__nav-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="11" fill="#7E25FB" />
+                            <path d="M4.33203 17.6654L13.6654 14.332L7.66537 8.33203L4.33203 17.6654Z" fill="#F7F7F7" />
+                            <path
+                                d="M12.6871 11.3531L16.4138 7.62643C16.7405 7.29977 17.2671 7.29977 17.5938 7.62643L17.9871 8.01977L18.6938 7.3131L18.3005 6.91977C17.5871 6.20643 16.4205 6.20643 15.7071 6.91977L11.9805 10.6464L12.6871 11.3531Z"
+                                fill="#F7F7F7" />
+                            <path
+                                d="M9.70583 7.58664L9.3125 7.97997L10.0192 8.68664L10.4125 8.29331C11.1258 7.57997 11.1258 6.41331 10.4125 5.69997L10.0192 5.30664L9.3125 6.01997L9.70583 6.41331C10.0258 6.73331 10.0258 7.26664 9.70583 7.58664Z"
+                                fill="#F7F7F7" />
+                            <path
+                                d="M14.3725 10.9198L13.3125 11.9798L14.0192 12.6864L15.0792 11.6264C15.4058 11.2998 15.9325 11.2998 16.2592 11.6264L17.3325 12.6998L18.0392 11.9931L16.9658 10.9198C16.2458 10.2064 15.0858 10.2064 14.3725 10.9198Z"
+                                fill="#F7F7F7" />
+                            <path
+                                d="M13.0379 6.91932L10.6445 9.31266L11.3512 10.0193L13.7445 7.62599C14.4579 6.91266 14.4579 5.74599 13.7445 5.03266L12.6845 3.97266L11.9779 4.67932L13.0379 5.73932C13.3579 6.06599 13.3579 6.59932 13.0379 6.91932Z"
+                                fill="#F7F7F7" />
+                        </svg>
+                        Вечеринки
+                    </a>
+                    <a href="#" class="header__nav-item">Концерты</a>
+                    <a href="#" class="header__nav-item">Выставки</a>
+                    <a href="#" class="header__nav-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="11" fill="#FF9215" />
+                            <path
+                                d="M10.375 9.125H9.125V4.75H7.875V9.125H6.625V4.75H5.375V9.125C5.375 10.45 6.4125 11.525 7.71875 11.6063V17.25H9.28125V11.6063C10.5875 11.525 11.625 10.45 11.625 9.125V4.75H10.375V9.125ZM13.5 7.25V12.25H15.0625V17.25H16.625V4.75C14.9 4.75 13.5 6.15 13.5 7.25Z"
+                                fill="#F7F7F7" />
+                        </svg>
+                        Рестораны
+                    </a>
+                    <a href="#" class="header__nav-item">Магазины</a>
+                    <a href="#" class="header__nav-item">Медиа</a>
+                    <a href="#" class="header__nav-item">Ещё</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="events mb60">
+        <div class="container">
+            <div class="section__title border-bottom mb24">Cобытия в Ташкенте <i class="fas fa-chevron-right"></i></div>
+            <div class="events__inner">
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Скидки на концерт Далера Назарова</div>
+                        <div class="card-subtitle grey"><span class="card-red-span">Проходит</span> с 14 апреля по 15
+                            мая
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Скидки в Erkatoy Center</div>
+                        <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> 15 апреля</div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Бесплатные уроки курса 3ds Max</div>
+                        <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> 15 апреля</div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Кино недели: «Гениальное ограбление» <span
+                                class="card-badge">16+</span></div>
+                        <div class="card-subtitle grey"><span class="card-red-span">В кино</span> с 14 апреля по 15 мая
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Ramadan sale в Vicco</div>
+                        <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> 15 апреля</div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Концерт Камерного оркестра</div>
+                        <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> 15 апреля</div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Кино недели: «100% волк» <span class="card-badge">6+</span></div>
+                        <div class="card-subtitle grey"><span class="card-red-span">В кино</span> с 15 по 18 апреля
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Международный фестиваль циркового искусства...</div>
+                        <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> 15 апреля</div>
+                    </div>
+                </a>
+                <a href="#" class="events__item">
+                    <div class="events__item-left">
+                        <img src="img/events-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="events__item-right">
+                        <div class="card-h-3 mb4">Вечеринки в Aura</div>
+                        <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> 15 апреля</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="actual mb60">
+        <div class="container">
+            <div class="actual__inner">
+                <div class="actual__content">
+                    <div class="section__title border-bottom mr24 mb24">Актуальное <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="actual__items-wrapper">
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">L'Oréal Paris презентовали результат коллаборации с Elie Saab
+                                </div>
+                                <div class="card-subtitle opacity-5">Мода</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">В Ташкенте откроется магазин семейного бренда обуви KEDDO
+                                </div>
+                                <div class="card-subtitle opacity-5">Мода</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">Golden House: «Жилые комплексы Assalom — это возможность
+                                    выиграть...</div>
+                                <div class="card-subtitle opacity-5">Город</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">Вышел дебютный трейлер фильма «Веном 2»</div>
+                                <div class="card-subtitle opacity-5">Кино</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">В Ташкенте пройдет бизнес-форум MAKON Marketing Forum 2021
+                                </div>
+                                <div class="card-subtitle opacity-5">Город</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">Louis Vuitton представили коллекцию украшений B Blossom</div>
+                                <div class="card-subtitle opacity-5">Мода</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">Дрейк выпустил коллекцию арома свечей</div>
+                                <div class="card-subtitle opacity-5">Мода</div>
+                            </div>
+                        </a>
+                        <a href="#" class="actual__item">
+                            <div class="actual__item-left">
+                                <img src="img/actual-item-img.png" alt="img">
+                                <span class="photo">6 фото</span>
+                            </div>
+                            <div class="actual__item-right">
+                                <div class="card-h-4 mb4">Новый стрит-арт к 9 Мая представил столичный граффитист</div>
+                                <div class="card-subtitle opacity-5">Мода</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="actual__banners">
+                    <div class="actual__banner__item">
+                        <a href="#"><img src="img/banner-3.png" alt="banner"></a>
+                        <a href="#" class="actual__banner-text"><img src="img/banner-icon.svg" alt="banner-icon"> Реклама на
+                            сайте</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expected mb28">
+        <div class="container">
+            <div class="section__title border-bottom mb24">Ожидаемые события <i class="fas fa-chevron-right"></i></div>
+            <div class="expected__inner">
+                <a href="#" class="expected__item">
+                    <img src="img/expected-item-img.png" alt="img">
+                    <h3 class="mb4">Скидки на концерт Далера Назарова</h3>
+                    <div class="card-subtitle grey"><span class="card-red-span">Проходит</span> с 14 апреля по 15 мая
+                    </div>
+                </a>
+                <a href="#" class="expected__item">
+                    <img src="img/expected-item-img.png" alt="img">
+                    <h3 class="mb4">Международный фестиваль циркового искусства «Шелковый путь» </h3>
+                    <div class="card-subtitle grey"><span class="card-red-span">Проходит</span> с 14 апреля по 15 мая
+                    </div>
+                </a>
+                <a href="#" class="expected__item">
+                    <img src="img/expected-item-img.png" alt="img">
+                    <h3 class="mb4">Новая цирковая программа «Эксклюзив» </h3>
+                    <div class="card-subtitle grey"><span class="card-yellow-span">Проходит</span> 17 апреля</div>
+                </a>
+                <div class="expected__nav">
+                    <div class="expected__prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="expected__next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies mb60">
+        <div class="container">
+            <div class="section__title border-bottom mb24">Афиша кино <i class="fas fa-chevron-right"></i></div>
+            <div class="movies__inner">
+                <a href="#" class="movies__item">
+                    <div class="movies__item-img">
+                        <img src="img/movies-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="rating rating-yellow">5.7</span>
+                    </div>
+                    <div class="card-h-3 mb4">100% Волк</div>
+                    <div class="card-subtitle opacity-5">Мультфильм · <span class="card-badge">6+</span></div>
+                </a>
+                <a href="#" class="movies__item">
+                    <div class="movies__item-img">
+                        <img src="img/movies-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="card-h-3 mb4">Заклятье: Новый ритуал</div>
+                    <div class="card-subtitle opacity-5">Триллер · <span class="card-badge">16+</span></div>
+                </a>
+                <a href="#" class="movies__item">
+                    <div class="movies__item-img">
+                        <img src="img/movies-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="rating rating-red">4.3</span>
+                    </div>
+                    <div class="card-h-3 mb4">Чернобыль</div>
+                    <div class="card-subtitle opacity-5">Триллер · <span class="card-badge">18+</span></div>
+                </a>
+                <a href="#" class="movies__item">
+                    <div class="movies__item-img">
+                        <img src="img/movies-item-img.png" alt="img">
+                    </div>
+                    <div class="card-h-3 mb4">Майор Гром: Чумной Доктор</div>
+                    <div class="card-subtitle opacity-5">Боевик · <span class="card-badge">12+</span></div>
+                </a>
+                <a href="#" class="movies__item">
+                    <div class="movies__item-img">
+                        <img src="img/movies-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="rating rating-green">6.4</span>
+                    </div>
+                    <div class="card-h-3 mb4">Гениальное ограбление</div>
+                    <div class="card-subtitle opacity-5">Боевик · <span class="card-badge">16+</span></div>
+                </a>
+                <a href="#" class="movies__item">
+                    <div class="movies__item-img">
+                        <img src="img/movies-item-img.png" alt="img">
+                    </div>
+                    <div class="card-h-3 mb4">Пальма</div>
+                    <div class="card-subtitle opacity-5">Драма · <span class="card-badge">6+</span></div>
+                </a>
+            </div>
+            <div class="labels-wrapper mt32">
+                <a href="#" class="label-item">В кино сегодня</a>
+                <a href="#" class="label-item">В кино завтра</a>
+            </div>
+        </div>
+    </section>    
+
+    <section class="also mb60">
+        <div class="container">
+            <div class="section__title border-bottom mb24">Смотрите также</div>
+            <div class="also__inner">
+                <a href="#" class="also__item also__item-calendar">
+                    <div class="also__item-text">Календарь <br> мероприятий <br> в Ташкенте</div>
+                    <i class="far fa-calendar-alt"></i>
+                </a>
+                <a href="#" class="also__item also__item-watch">
+                    <div class="also__item-text">Ближайшие мероприятия</div>
+                    <i class="fas fa-clock"></i>
+                </a>
+                <a href="#" class="also__item also__item-percent">
+                    <div class="also__item-text">Актуальные <br> Распродажи <br> и Скидки</div>
+                    <i class="fas fa-percent"></i>
+                </a>
+                <a href="#" class="also__item also__item-telegram">
+                    <div class="also__item-text">Афиша <br> в телеграмме</div>
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="banner mb60">
+        <a class="banner__img" href="#"><img src="img/banner-2.png" alt="banner-1"></a>
+        <a href="#" class="banner__text"><img src="img/banner-icon.svg" alt="banner-icon"> Реклама на сайте</a>
+    </section>
+
+    <section class="news mb60">
+        <div class="container">
+            <div class="section__title border-bottom mb24">Новости и обзоры</div>
+            <div class="news__inner">
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">Национальный филармонический оркестр России выступит в Ташкенте</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">Dior представили коллекцию украшений для дома с цветочными мотивами</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">Стали известны все имена участников шоу «Чемпионов на льду»</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">Открытие выставки «Серый отдых» Джамы Адылова</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">iPhone 12 Pro Max и спортивное тело в подарок: как прошел челлендж BEFIT PRO</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">Apple объявила дату весенней презентации</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">8 фото</span>
+                    </div>
+                    <h6 class="mb4">Gucci выпустили разноцветную коллекцию с монограммами GG</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <a href="#" class="news__item">
+                    <div class="news__item-img">
+                        <img src="img/news-item-img.png" alt="img">
+                        <i class="fas fa-play"></i>
+                        <span class="photo">4 фото</span>
+                    </div>
+                    <h6 class="mb4">Обзор Galaxy Buds Pro: что интересного в новых наушниках от Samsung</h6>
+                    <div class="card-subtitle opacity-5">Опубликовано: 14 апреля</div>
+                </a>
+                <button class="more-btn">Показать ещё</button>
+            </div>
+        </div>
+    </section>   
+
+    <section class="performances mb60">
+        <div class="container">
+            <div class="section__title border-bottom mb24">Афиша спектаклей <i class="fas fa-chevron-right"></i></div>
+            <div class="performances__inner">
+                <div class="actual__items-wrapper">
+                    <a href="#" class="actual__item">
+                        <div class="actual__item-left">
+                            <img src="img/performances-item-img.png" alt="img">
+                        </div>
+                        <div class="actual__item-right">
+                            <div class="card-h-3 mb4">Бешеные деньги</div>
+                            <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> в 18:00, Драма,
+                                Русский Драматический</div>
+                        </div>
+                    </a>
+                    <a href="#" class="actual__item">
+                        <div class="actual__item-left">
+                            <img src="img/performances-item-img.png" alt="img">
+                        </div>
+                        <div class="actual__item-right">
+                            <div class="card-h-3 mb4">Олифта</div>
+                            <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> в 18:00,
+                                Театр им. Мукимий</div>
+                        </div>
+                    </a>
+                    <a href="#" class="actual__item">
+                        <div class="actual__item-left">
+                            <img src="img/performances-item-img.png" alt="img">
+                        </div>
+                        <div class="actual__item-right">
+                            <div class="card-h-3 mb4">Сердце на ладони</div>
+                            <div class="card-subtitle grey"><span class="card-green-span">Сегодня</span> в 18:00,
+                                Театр Оперетты</div>
+                        </div>
+                    </a>
+                    <a href="#" class="actual__item">
+                        <div class="actual__item-left">
+                            <img src="img/performances-item-img.png" alt="img">
+                        </div>
+                        <div class="actual__item-right">
+                            <div class="card-h-3 mb4">Асл хазина</div>
+                            <div class="card-subtitle grey"><span class="card-yellow-span">Завтра</span> в 18:00,
+                                Комедия,
+                                Театр им. Мукимий</div>
+                        </div>
+                    </a>
+                    <a href="#" class="actual__item">
+                        <div class="actual__item-left">
+                            <img src="img/performances-item-img.png" alt="img">
+                        </div>
+                        <div class="actual__item-right">
+                            <div class="card-h-3 mb4">Ах, водевиль, водевиль</div>
+                            <div class="card-subtitle grey"><span class="card-yellow-span">Завтра</span> в 18:00,
+                                Комедия,
+                                Театр им. Мукимий</div>
+                        </div>
+                    </a>
+                    <a href="#" class="actual__item">
+                        <div class="actual__item-left">
+                            <img src="img/performances-item-img.png" alt="img">
+                        </div>
+                        <div class="actual__item-right">
+                            <div class="card-h-3 mb4">Бахром ва Дилором</div>
+                            <div class="card-subtitle grey"><span class="card-yellow-span">Завтра</span> в 18:00, драма,
+                                Театр Кукол</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="labels-wrapper mt32">
+                <a href="#" class="label-item">Спектакли на неделю</a>
+                <a href="#" class="label-item">Список театров</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="double-block mb60">
+        <div class="container">
+            <div class="double-block__inner">
+                <div class="double-block__photos mr24">
+                    <div class="section__title border-bottom mb24">Фотографии с событий <i
+                            class="fas fa-chevron-right"></i></div>
+                    <div class="double-block__items-wrapper">
+                        <a href="#" class="double-block__item">
+                            <div class="double-block__item-left">
+                                <div class="card-h-3 mb4">Balenciaga Pre-Fall 2021</div>
+                                <div class="card-subtitle grey">19 апреля 2021</div>
+                            </div>
+                            <div class="double-block__item-right">
+                                <img src="img/double-block-item-img.png" alt="img">
+                                <span class="photo">57 фото</span>
+                            </div>
+                        </a>
+                        <a href="#" class="double-block__item">
+                            <div class="double-block__item-left">
+                                <div class="card-h-3 mb4">Balenciaga Pre-Fall 2021</div>
+                                <div class="card-subtitle grey">19 апреля 2021</div>
+                            </div>
+                            <div class="double-block__item-right">
+                                <img src="img/double-block-item-img.png" alt="img">
+                                <span class="photo">57 фото</span>
+                            </div>
+                        </a>
+                        <a href="#" class="double-block__item">
+                            <div class="double-block__item-left">
+                                <div class="card-h-3 mb4">Balenciaga Pre-Fall 2021</div>
+                                <div class="card-subtitle grey">19 апреля 2021</div>
+                            </div>
+                            <div class="double-block__item-right">
+                                <img src="img/double-block-item-img.png" alt="img">
+                                <span class="photo">57 фото</span>
+                            </div>
+                        </a>
+                        <a href="#" class="double-block__item">
+                            <div class="double-block__item-left">
+                                <div class="card-h-3 mb4">Balenciaga Pre-Fall 2021</div>
+                                <div class="card-subtitle grey">19 апреля 2021</div>
+                            </div>
+                            <div class="double-block__item-right">
+                                <img src="img/double-block-item-img.png" alt="img">
+                                <span class="photo">57 фото</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="labels-wrapper mt32">
+                        <a href="#" class="label-item">Все события</a>
+                    </div>
+                </div>
+                <div class="double-block__news">
+                    <div class="section__title border-bottom mb24 mr24">Новости Узбекистана <i
+                            class="fas fa-chevron-right"></i></div>
+                    <a href="#" class="double-block__news-item">
+                        <div class="card-h-2 mb4">«Агробанк» представил мобильный офис банка</div>
+                        <div class="card-subtitle grey">Вчера, <i class="far fa-eye"></i> 6 435</div>
+                    </a>
+                    <a href="#" class="double-block__news-item">
+                        <div class="card-h-2 mb4">УЕФА утвердил новый формат проведения еврокубков</div>
+                        <div class="card-subtitle grey">Вчера, <i class="far fa-eye"></i> 6 435</div>
+                    </a>
+                    <a href="#" class="double-block__news-item">
+                        <div class="card-h-2 mb4">Назначены заместители министра внутренних дел</div>
+                        <div class="card-subtitle grey">Вчера, <i class="far fa-eye"></i> 6 435</div>
+                    </a>
+                    <a href="#" class="double-block__news-item">
+                        <div class="card-h-2 mb4">Alter Ego: в Makro рассказали о деньгах в ритейле и традиционном рынке
+                        </div>
+                        <div class="card-subtitle grey">Вчера, <i class="far fa-eye"></i> 6 435</div>
+                    </a>
+                    <button class="double-block__news-btn"><img src="img/more-news-icon.png" alt="icon"> Больше
+                        новостей</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt60">
+        <div class="container">
+            <div class="footer__nav">
+                <a href="#" class="footer__logo"><img src="img/logo.svg" alt="logo"></a>
+                <div class="footer__list">
+                    <a class="footer__list-item" href="#">Контакты</a>
+                    <a class="footer__list-item" href="#">Реклама</a>
+                    <a class="footer__list-item" href="#">О проекте</a>
+                    <a class="footer__list-item" href="#">Вакансии</a>
+                    <a class="footer__list-item red" href="#">Добавить заведение</a>
+                    <a class="footer__list-item red" href="#">Добавить новость</a>
+                </div>
+                <div class="footer__soc">
+                    <a class="footer__soc-item" href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a class="footer__soc-item" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="footer__soc-item" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="footer__soc-item" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer__text">
+                Воспроизводство, копирование, тиражирование, распространение и иное использование
+                информации с сайта Afisha.uz возможно только с предварительного письменного разрешения редакции.
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="footer__text">
+                Свидетельство регистрации электронного СМИ №0400 от 24 мая 2007 г. <br>
+                Учредитель: ООО «Afisha Media» <br> Главный редактор: Сапаева Галина Вячеславовна <br>
+                Адрес: 100007, Ташкент, ул. Паркент, 26А / Почта: <a href="mailto:info@afisha.uz">info@afisha.uz</a>
+            </div>
+            <div class="footer__copyright">
+                © 2005-2021 Afisha.uz <br>
+                ООО «Afisha Media»
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a4e584b747.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

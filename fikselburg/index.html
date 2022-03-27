@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikselburg</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <a class="header-logo" href="#"></a>
+        <ul class="header-ul">
+            <li><a class="header-ul-item active" href="#">Услуги</a></li>
+            <li><a class="header-ul-item" href="#">Оборудование</a></li>
+            <li><a class="header-ul-item" href="#">Продукция</a></li>
+            <li><a class="header-ul-item" href="#">Новости</a></li>
+            <li><a class="header-ul-item" href="#">О нас</a></li>
+            <li><a class="header-ul-item" href="#">Контакты</a></li>
+            <li><a class="header-ul-item header-ul-tel" href="tel:+78123808513">+7 (812) 380-85-13</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <div class="menu__box">
+                <h3 class="menu__box-title">Меню</h3>
+                <ul class="header-ul-mobile">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Оборудование</a></li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-slider">
+        <section class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="main-slider-frame-1">
+                    <div class="overlay"></div>
+                    <div class="main-slider-frame-1-inner">
+                        <p class="main-slider-frame-1-inner-text">Оказываем спектр услуг по металлообработке
+                            и механообработке</p>
+                        <div class="main-slider-frame-1-footer">
+                            <div class="main-slider-frame-1-footer-left">
+                                <div class="main-slider-frame-1-footer-item">
+                                    <div class="main-slider-frame-1-footer-ib">
+                                        <img class="main-slider-frame-1-footer-icon" src="img/white-location.svg"
+                                            alt="location">
+                                    </div>
+                                    <div>
+                                        <div class="main-slider-frame-1-footer-text">Доставка заказа в любую точку
+                                            России,
+                                            СНГ, Европы</div>
+                                    </div>
+                                </div>
+                                <div class="main-slider-frame-1-footer-item">
+                                    <div class="main-slider-frame-1-footer-calendar main-slider-frame-1-footer-ib">
+                                        <img class="main-slider-frame-1-footer-icon" src="img/calendar.svg"
+                                            alt="calendar">
+                                        <span>25</span>
+                                    </div>
+                                    <div>
+                                        <div class="main-slider-frame-1-footer-text">Возможность выполнить заказ в
+                                            сжатые
+                                            сроки</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-slider-frame-1-footer-right">
+                                <a class="red-btn" href="#">Оставить заказ</a>
+                                <span>Мы перезвоним вам в рабочие дни с 9:00 до 20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="main-slider-frame-2">
+                    <div class="main-slider-frame-2-inner">
+                        <h3 class="main-slider-frame-2-title">Высокоточное изготовление на немецких станках</h3>
+                        <p class="main-slider-frame-2-text">Высокоточное изготовление на немецких станках, высокоточное
+                            изготовление на немецких станках высокоточное изготовление</p>
+                        <div class="main-slider-frame-2-lists">
+                            <ul>
+                                <li>Trulaser Tube 7000</li>
+                                <li>FiberTrulaser Tube 7000</li>
+                                <li>Trulaser Tube 1000</li>
+                                <li>Trulaser Tube 5000 Fiber</li>
+                            </ul>
+                            <ul>
+                                <li>Trulaser Tube 7000</li>
+                                <li>FiberTrulaser Tube 7000 </li>
+                                <li>Trulaser Tube 1000</li>
+                            </ul>
+                        </div>
+                        <a class="white-btn" href="#">Все оборудование</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="services main-slider-frame-3">
+                    <div class="overlay"></div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/3.mp4" type="video/mp4">
+                    </video>
+                    <div class="services-inner">
+                        <h3 class="services-inner-title"> <span>Услуги</span> <br> Лазерная резка</h3>
+                        <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл
+                            толщиной от
+                            0,35 мм до 30 мм способны
+                            разрезать металл толщиной.</p>
+                        <div class="services-inner-statistics">
+                            <div class="services-inner-statistics-item">
+                                <span>
+                                    < 2</span> <span>Дней на выполнение
+                                        заказа
+                                </span>
+                            </div>
+                            <div class="services-inner-statistics-item">
+                                <span>684</span>
+                                <span>Выполненных заказа</span>
+                            </div>
+                        </div>
+                        <div class="services-inner-footer">
+                            <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                            <a class="transparent-btn" href="#">Подробнее</a>
+                        </div>
+                        <div class="services-page-list">
+                            <ul>
+                                <li class="active"><img src="img/services-icon-1.svg" alt="img"> Лазерная резка</li>
+                                <li><img src="img/services-icon-2.svg" alt="img"> Гибка металла</li>
+                                <li><img src="img/services-icon-3.svg" alt="img"> Порошковая окраска</li>
+                                <li><img src="img/services-icon-4.svg" alt="img"> Пробивка металла</li>
+                                <li><img src="img/services-icon-5.svg" alt="img"> Слесарные работы</li>
+                                <li><img src="img/services-icon-6.svg" alt="img"> Конструкторское бюро</li>
+                            </ul>
+                        </div>
+                        <div class="main-slider-frame-3-mobile-list">
+                            <ul>
+                                <li>Лазерная резка</li>
+                                <li>Пробивка металла <img src="img/small-right-arrow.svg" alt="arrow"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-slider-frame-3-list">
+                        <ul>
+                            <li class="active">
+                                <div class="canvas canvas-1">
+                                    <span><a href="#"><img src="img/services-icon-1.svg" alt="icon"></a></span>
+                                </div>
+                                Лазерная резка
+                            </li>
+                            <li>Пробивка металла</li>
+                            <li>Гибка металла</li>
+                            <li>Слесарные работы</li>
+                            <li>Порошковая окраска</li>
+                            <li>Конструкторское бюро</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="services main-slider-frame-3">
+                    <div class="overlay"></div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/5.mp4" type="video/mp4">
+                    </video>
+                    <div class="services-inner">
+                        <h3 class="services-inner-title"> <span>Услуги</span> <br> Пробивка металла</h3>
+                        <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл
+                            толщиной от
+                            0,35 мм до 30 мм способны
+                            разрезать металл толщиной.</p>
+                        <div class="services-inner-statistics">
+                            <div class="services-inner-statistics-item">
+                                <span>
+                                    < 2</span> <span>Дней на выполнение
+                                        заказа
+                                </span>
+                            </div>
+                            <div class="services-inner-statistics-item">
+                                <span>684</span>
+                                <span>Выполненных заказа</span>
+                            </div>
+                        </div>
+                        <div class="services-inner-footer">
+                            <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                            <a class="transparent-btn" href="#">Подробнее</a>
+                        </div>
+                        <div class="services-page-list">
+                            <ul>
+                                <li><img src="img/services-icon-1.svg" alt="img"> Лазерная резка</li>
+                                <li class="active"><img src="img/services-icon-4.svg" alt="img"> Пробивка металла</li>
+                                <li><img src="img/services-icon-3.svg" alt="img"> Порошковая окраска</li>
+                                <li><img src="img/services-icon-2.svg" alt="img"> Гибка металла</li>
+                                <li><img src="img/services-icon-5.svg" alt="img"> Слесарные работы</li>
+                                <li><img src="img/services-icon-6.svg" alt="img"> Конструкторское бюро</li>
+                            </ul>
+                        </div>
+                        <div class="main-slider-frame-3-mobile-list">
+                            <ul>
+                                <li>Лазерная резка</li>
+                                <li>Пробивка металла <img src="img/small-right-arrow.svg" alt="arrow"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-slider-frame-3-list">
+                        <ul>
+                            <li>Лазерная резка</li>
+                            <li class="active">
+                                <div class="canvas canvas-2">
+                                    <span><a href="#"><img src="img/services-icon-4.svg" alt="icon"></a></span>
+                                </div>
+                                Пробивка металла
+                            </li>
+                            <li>Гибка металла</li>
+                            <li>Слесарные работы</li>
+                            <li>Порошковая окраска</li>
+                            <li>Конструкторское бюро</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="services main-slider-frame-3">
+                    <div class="overlay"></div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/2.mp4" type="video/mp4">
+                    </video>
+                    <div class="services-inner">
+                        <h3 class="services-inner-title"> <span>Услуги</span> <br> Гибка металла</h3>
+                        <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл
+                            толщиной от
+                            0,35 мм до 30 мм способны
+                            разрезать металл толщиной.</p>
+                        <div class="services-inner-statistics">
+                            <div class="services-inner-statistics-item">
+                                <span>
+                                    < 2</span> <span>Дней на выполнение
+                                        заказа
+                                </span>
+                            </div>
+                            <div class="services-inner-statistics-item">
+                                <span>684</span>
+                                <span>Выполненных заказа</span>
+                            </div>
+                        </div>
+                        <div class="services-inner-footer">
+                            <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                            <a class="transparent-btn" href="#">Подробнее</a>
+                        </div>
+                        <div class="services-page-list">
+                            <ul>
+                                <li><img src="img/services-icon-1.svg" alt="img"> Лазерная резка</li>
+                                <li><img src="img/services-icon-4.svg" alt="img"> Пробивка металла</li>
+                                <li class="active"><img src="img/services-icon-2.svg" alt="img"> Гибка металла</li>
+                                <li><img src="img/services-icon-3.svg" alt="img"> Порошковая окраска</li>
+                                <li><img src="img/services-icon-5.svg" alt="img"> Слесарные работы</li>
+                                <li><img src="img/services-icon-6.svg" alt="img"> Конструкторское бюро</li>
+                            </ul>
+                        </div>
+                        <div class="main-slider-frame-3-mobile-list">
+                            <ul>
+                                <li>Лазерная резка</li>
+                                <li>Пробивка металла <img src="img/small-right-arrow.svg" alt="arrow"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-slider-frame-3-list">
+                        <ul>
+                            <li>Лазерная резка</li>
+                            <li>Пробивка металла</li>
+                            <li class="active">
+                                <div class="canvas canvas-3">
+                                    <span><a href="#"><img src="img/services-icon-2.svg" alt="icon"></a></span>
+                                </div>
+                                Гибка металла
+                            </li>
+                            <li>Слесарные работы</li>
+                            <li>Порошковая окраска</li>
+                            <li>Конструкторское бюро</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="services main-slider-frame-3">
+                    <div class="overlay"></div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/4.mp4" type="video/mp4">
+                    </video>
+                    <div class="services-inner">
+                        <h3 class="services-inner-title"> <span>Услуги</span> <br> Слесарные работы</h3>
+                        <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл
+                            толщиной от
+                            0,35 мм до 30 мм способны
+                            разрезать металл толщиной.</p>
+                        <div class="services-inner-statistics">
+                            <div class="services-inner-statistics-item">
+                                <span>
+                                    < 2</span> <span>Дней на выполнение
+                                        заказа
+                                </span>
+                            </div>
+                            <div class="services-inner-statistics-item">
+                                <span>684</span>
+                                <span>Выполненных заказа</span>
+                            </div>
+                        </div>
+                        <div class="services-inner-footer">
+                            <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                            <a class="transparent-btn" href="#">Подробнее</a>
+                        </div>
+                        <div class="services-page-list">
+                            <ul>
+                                <li><img src="img/services-icon-1.svg" alt="img"> Лазерная резка</li>
+                                <li><img src="img/services-icon-4.svg" alt="img"> Пробивка металла</li>
+                                <li><img src="img/services-icon-2.svg" alt="img"> Гибка металла</li>
+                                <li class="active"><img src="img/services-icon-5.svg" alt="img"> Слесарные работы</li>
+                                <li><img src="img/services-icon-3.svg" alt="img"> Порошковая окраска</li>
+                                <li><img src="img/services-icon-6.svg" alt="img"> Конструкторское бюро</li>
+                            </ul>
+                        </div>
+                        <div class="main-slider-frame-3-mobile-list">
+                            <ul>
+                                <li>Лазерная резка</li>
+                                <li>Пробивка металла <img src="img/small-right-arrow.svg" alt="arrow"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-slider-frame-3-list">
+                        <ul>
+                            <li>Лазерная резка</li>
+                            <li>Пробивка металла</li>
+                            <li>Гибка металла</li>
+                            <li class="active">
+                                <div class="canvas canvas-4">
+                                    <span><a href="#"><img src="img/services-icon-5.svg" alt="icon"></a></span>
+                                </div>
+                                Слесарные работы
+                            </li>
+                            <li>Порошковая окраска</li>
+                            <li>Конструкторское бюро</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="services main-slider-frame-3">
+                    <div class="overlay"></div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/6.mp4" type="video/mp4">
+                    </video>
+                    <div class="services-inner">
+                        <h3 class="services-inner-title"> <span>Услуги</span> <br> Порошковая окраска</h3>
+                        <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл
+                            толщиной от
+                            0,35 мм до 30 мм способны
+                            разрезать металл толщиной.</p>
+                        <div class="services-inner-statistics">
+                            <div class="services-inner-statistics-item">
+                                <span>
+                                    < 2</span> <span>Дней на выполнение
+                                        заказа
+                                </span>
+                            </div>
+                            <div class="services-inner-statistics-item">
+                                <span>684</span>
+                                <span>Выполненных заказа</span>
+                            </div>
+                        </div>
+                        <div class="services-inner-footer">
+                            <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                            <a class="transparent-btn" href="#">Подробнее</a>
+                        </div>
+                        <div class="services-page-list">
+                            <ul>
+                                <li><img src="img/services-icon-1.svg" alt="img"> Лазерная резка</li>
+                                <li><img src="img/services-icon-4.svg" alt="img"> Пробивка металла</li>
+                                <li><img src="img/services-icon-2.svg" alt="img"> Гибка металла</li>
+                                <li><img src="img/services-icon-5.svg" alt="img"> Слесарные работы</li>
+                                <li class="active"><img src="img/services-icon-3.svg" alt="img"> Порошковая окраска</li>
+                                <li><img src="img/services-icon-6.svg" alt="img"> Конструкторское бюро</li>
+                            </ul>
+                        </div>
+                        <div class="main-slider-frame-3-mobile-list">
+                            <ul>
+                                <li>Лазерная резка</li>
+                                <li>Пробивка металла <img src="img/small-right-arrow.svg" alt="arrow"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-slider-frame-3-list">
+                        <ul>
+                            <li>Лазерная резка</li>
+                            <li>Пробивка металла</li>
+                            <li>Гибка металла</li>
+                            <li>Слесарные работы</li>
+                            <li class="active">
+                                <div class="canvas canvas-5">
+                                    <span><a href="#"><img src="img/services-icon-3.svg" alt="icon"></a></span>
+                                </div>
+                                Порошковая окраска
+                            </li>
+                            <li>Конструкторское бюро</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="services main-slider-frame-3">
+                    <div class="overlay"></div>
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="services-inner">
+                        <h3 class="services-inner-title"> <span>Услуги</span> <br> Конструкторское бюро</h3>
+                        <p class="services-inner-text">Наши современные лазерные станки TRUMPF способны разрезать металл
+                            толщиной от
+                            0,35 мм до 30 мм способны
+                            разрезать металл толщиной.</p>
+                        <div class="services-inner-statistics">
+                            <div class="services-inner-statistics-item">
+                                <span>
+                                    < 2</span> <span>Дней на выполнение
+                                        заказа
+                                </span>
+                            </div>
+                            <div class="services-inner-statistics-item">
+                                <span>684</span>
+                                <span>Выполненных заказа</span>
+                            </div>
+                        </div>
+                        <div class="services-inner-footer">
+                            <a id="open-modal-btn" class="red-btn" href="#">Заказать</a>
+                            <a class="transparent-btn" href="#">Подробнее</a>
+                        </div>
+                        <div class="services-page-list">
+                            <ul>
+                                <li><img src="img/services-icon-1.svg" alt="img"> Лазерная резка</li>
+                                <li><img src="img/services-icon-4.svg" alt="img"> Пробивка металла</li>
+                                <li><img src="img/services-icon-2.svg" alt="img"> Гибка металла</li>
+                                <li><img src="img/services-icon-5.svg" alt="img"> Слесарные работы</li>
+                                <li><img src="img/services-icon-3.svg" alt="img"> Порошковая окраска</li>
+                                <li class="active"><img src="img/services-icon-6.svg" alt="img"> Конструкторское бюро
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-slider-frame-3-mobile-list">
+                            <ul>
+                                <li>Лазерная резка</li>
+                                <li>Пробивка металла <img src="img/small-right-arrow.svg" alt="arrow"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-slider-frame-3-list">
+                        <ul>
+                            <li>Лазерная резка</li>
+                            <li>Пробивка металла</li>
+                            <li>Гибка металла</li>
+                            <li>Слесарные работы</li>
+                            <li>Порошковая окраска</li>
+                            <li class="active">
+                                <div class="canvas canvas-6">
+                                    <span><a href="#"><img src="img/services-icon-6.svg" alt="icon"></a></span>
+                                </div>
+                                Конструкторское бюро
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="main-slider-frame-4">
+                    <div class="main-slider-frame-4-inner">
+                        <div class="main-slider-frame-4-wrapper">
+                            <p class="main-slider-frame-4-text">Развивать производство, осваивать инновационные
+                                технологии,
+                                изобретать новый конструктив и дизайн, отвечающий спросу – вот секрет нашего успеха.</p>
+                            <div class="main-slider-frame-4-name">Евгений Яковлевич Фиксель</div>
+                            <div class="main-slider-frame-4-job">Генеральный директор ООО «Фиксельбург»</div>
+                        </div>
+                        <div class="main-slider-frame-4-statistics">
+                            <div class="main-slider-frame-4-statistics-item">
+                                <span>19</span>
+                                <span>Лет работы на рынке</span>
+                            </div>
+                            <div class="main-slider-frame-4-statistics-item">
+                                <span>1 286</span>
+                                <span>Сотрудников компании</span>
+                            </div>
+                            <div class="main-slider-frame-4-statistics-item">
+                                <span>6 925</span>
+                                <span>Выполненных работ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-lists footer-services">
+                        <ul>
+                            <li>
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#">Лазерная резка</a>
+                            </li>
+                            <li>
+                                <a href="#">Пробивка металла</a>
+                            </li>
+                            <li>
+                                <a href="#">Гибка металла</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#">Слесарные работы</a>
+                            </li>
+                            <li>
+                                <a href="#">Порошковая окраска</a>
+                            </li>
+                            <li>
+                                <a href="#">Конструкторское бюро</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-lists footer-help">
+                        <ul>
+                            <li>
+                                <a href="#">Помощь</a>
+                            </li>
+                            <li>
+                                <a href="#">Полезные статьи</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия и сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-ul">
+                        <ul>
+                            <li>
+                                <a href="#">Полезные статьи</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия и сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-products">
+                        <a href="#">Продукция</a>
+                        <a href="#">Оборудование</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© Фиксельбург 2002–2020. Все права защищены</span>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+
+        <div style="display: none;">
+            <div class="box-modal" id="exampleModal">
+                <div class="box-modal_close arcticmodal-close"><img src="img/modal-cancel.svg" alt="cancel"></div>
+                <h3 class="box-modal-title">Заказать лазерную резку</h3>
+                <form class="box-modal-form">
+                    <div class="input-container">
+                        <input type="text" required="" />
+                        <label>Имя</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" required="" />
+                        <label>Телефон</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea required=""></textarea>
+                        <label>Комментарий</label>
+                    </div>
+                    <button>Заказать лазерную резку</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/progressbar.js"></script>
+        <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+        <script src="js/main.js "></script>
+</body>
+
+</html>

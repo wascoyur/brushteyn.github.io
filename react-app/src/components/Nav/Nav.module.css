@@ -1,0 +1,19 @@
+.nav {
+  grid-area: nav;
+  background-color: cadetblue;
+  padding: 10px;
+}
+
+.nav__item {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__linkActive {
+  color: green;
+}

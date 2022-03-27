@@ -1,0 +1,39 @@
+.zoom_container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.zoom_in,
+.zoom_out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 13px;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    border-radius: 50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    background: blue;
+    cursor: pointer;
+}
+
+.zoom_display {
+    display: inline-block;
+    padding-top: 3px;
+    font-size: 14px;
+    line-height: 36px;
+    font-family: Fira Sans, sans-serif;
+    width: 67px;
+    text-align: center;
+    color: #7d7d89;
+}

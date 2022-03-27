@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Melia</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+       
+<div class="header">
+    <div id="navbar" class="navbar">
+        <div id="navbar-top" class="parent header-top">
+            <div class="left header-top-left-wrap">
+                <img class="header-top-icon" src="img/phone.svg" alt="">
+                <a class="header-top-num" href="tel:8 800 555 - 35 - 55">8 800 555 - 35 - 55</a>
+            </div>
+            <form class="middle header-top-searchform" action="">
+                    <input class="header-top-searchform-left" type="search" name="" placeholder="Поиск нужной продукции"> 
+                    <button type="submit" class="header-top-searchform-right"></button>
+            </form>
+            <div class="right header-top-right-wrap">
+                <a rel="leanModal" href="#shopping-cart" class="header-top-mag-inp open-modal" action="">
+                    КОРЗИНА
+                    <span class="header-top-mag-icon">2</span>
+                </a>
+                <a class="header-top-log-inp open-modal" href="#authorization-modal" rel="leanModal">Войти</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img class="dropdown-icon" src="img/login.svg" alt=""><span class="dropdown-arrow"><img src="img/arrow-down.svg" alt=""></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="account.html">Личный кабинет<span class="dropdown-content-square"></span></a>
+                        <a href="orders-history.html">История заказов</a>
+                        <a class="open modal" rel="leanModal" href="#exit-modal">Выйти из профиля</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right header-top-mobile-wrap">
+                <form class="header-top-mobile-mag" action="">
+                    <a rel="leanModal" href="#shopping-cart" class="open-modal"><input class="header-top-mobile-mag-inp" type="submit" value=""></a>
+                </form>
+                <form class="header-top-mobile-log" action="">
+                    <a rel="leanModal" href="#authorization-modal" class="open-modal"><input class="header-top-mobile-log-inp" type="submit" value=""></a>
+                </form>
+                <div class="dropdown">
+                    <button onclick="mobileFunction()" class="dropbtn"><img class="dropdown-icon" src="img/login.svg" alt=""></button>
+                    <div id="mobileDropdown" class="dropdown-content">
+                        <a href="account.html">Личный кабинет<span class="dropdown-content-square"></span></a>
+                        <a href="orders-history.html">История заказов</a>
+                        <a class="open modal" rel="leanModal" href="#exit-modal">Выйти из профиля</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="navbar-middle" class="header-middle">
+            <ul class="header-middle-ul-left">
+                <li class="header-middle-li"><a href="index.html">Главная</a></li>
+                <li class="header-middle-li"><a href="ordering-cakes.html">Сделать заказ</a></li>
+                <li class="header-middle-li"><a href="catalog.html">Каталог</a></li>
+                <li class="header-middle-li"><a href="delivery.html">Доставка</a></li>
+            </ul>
+                <a href="index.html"><img class="header-middle-logo" src="img/Logo.svg" alt=""></a>
+            <ul class="header-middle-ul-right">
+                <li class="header-middle-li"><a href="about.html">О нас</a></li>
+                <li class="header-middle-li"><a href="contacts.html">Контакты</a></li>
+                <li class="header-middle-li"><a class="btn-success open-modal" rel="leanModal" href="#basic-modal">Обратная связь</a></li>
+                <li class="header-middle-li"><a href="blog.html">Блог</a></li>
+            </ul>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">Главная</a></li>
+                    <li><a class="menu__item" href="ordering-cakes.html">Сделать заказ</a></li>
+                    <li><a class="menu__item" href="catalog.html">Каталог</a></li>
+                    <li><a class="menu__item" href="delivery.html">Доставка</a></li>
+                    <li><a class="menu__item" href="about.html">О нас</a></li>
+                    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+                    <li><a class="menu__item" href="blog.html">Блог</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="basic-modal" class="modal">
+        <div class="feedback-form-wrap">
+            <form class="grid-container feedback-form" action="">
+                <fieldset class="name feedback-form-field">
+                    <label class="feedback-form-label" for=""></label>
+                    <input class="feedback-form-input" id="name" name="name" type="name" placeholder="Ваше имя *"/>
+                </fieldset>
+                <fieldset class="mail feedback-form-field">
+                    <label class="feedback-form-label" for=""></label>
+                    <input class="feedback-form-input" id="email" name="email" type="email" placeholder="Ваш E-mail *"/>
+                </fieldset>
+                <fieldset class="area feedback-form-field">
+                    <label class="feedback-form-label" for=""></label>
+                    <textarea class="feedback-form-textarea" placeholder="Ваше сообщение *" id="textarea" name="textarea"></textarea>
+                </fieldset>
+                <fieldset class="button feedback-form-field">
+                     <button class="feedback-form-button" type="submit">Отправить</button>
+                </fieldset>
+            </form>
+            <img class="modal_close" src="img/cancel.png" alt="">
+        </div>
+    </div>
+    
+    <div class="main-slider owl-carousel owl-theme owl-loaded">
+        <div class="main-slider-item">
+            <img class="main-slider-item-img" src="img/main-slider-img.png" alt="">
+            <p class="main-slider-item-text-1">Праздник <span class="main-slider-item-text-1-black">вкуса!</span></p>
+            <p class="main-slider-item-text-2">Повседневная практика показывает, что постоянный количественный рост нашей активности позволяет выполнять важные задания по разработке новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности.</p>
+            <button class="main-slider-item-button"><a href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a></button>
+        </div>
+        <div class="main-slider-item">
+            <img class="main-slider-item-img" src="img/main-slider-img.png" alt="">
+            <p class="main-slider-item-text-1"><span class="main-slider-item-text-1-red">Праздник</span> вкуса!</p>
+            <p class="main-slider-item-text-2">Повседневная практика показывает, что постоянный количественный рост нашей активности позволяет выполнять важные задания по разработке новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности.</p>
+            <button class="main-slider-item-button"><a href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a></button>
+        </div>
+        <div class="main-slider-item">
+            <img class="main-slider-item-img" src="img/main-slider-img.png" alt="">
+            <p class="main-slider-item-text-1"><span class="main-slider-item-text-1-red">Праздник</span> вкуса!</p>
+            <p class="main-slider-item-text-2">Повседневная практика показывает, что постоянный количественный рост нашей активности позволяет выполнять важные задания по разработке новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности.</p>
+            <button class="main-slider-item-button"><a href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a></button>
+        </div>
+    </div>
+    
+</div>
+    
+<div class="product-categories">
+    <h3 class="product-categories-title">Основные товарные категории</h3>
+    <img class="product-categories-img" src="img/line-with-cake.png" alt="">
+    <div class="product-categories-wrap">
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+        <a class="product-categories-block" href="simple-page.html">
+            <div>
+                    <img class="product-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="product-categories-block-bottom">
+                    <p class="product-categories-block-bottom-text">Название данной товарной категории в две строки</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="product-categories-mob">
+        <ul class="product-categories-mob-ul">
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/birthday-cake.png" alt=""><a href="simple-page.html">Торты</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/cupcake.png" alt=""><a href="simple-page.html">Пирожные</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/pie.png" alt=""><a href="simple-page.html">Пироги</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/piece-of-bread.png" alt=""><a href="simple-page.html">Выпечка</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/loaf-of-bread.png" alt=""><a href="simple-page.html">Пирожки</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/cake-mob.png" alt=""><a href="simple-page.html">Кайнары</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/biscuit.png" alt=""><a href="simple-page.html">Блины</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/pretzel.png" alt=""><a href="simple-page.html">Сладости</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/loaf-of-bread-2.png" alt=""><a href="simple-page.html">Хачапури и лазанья</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/sourdough.png" alt=""><a href="simple-page.html">Постное меню</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/pretzel.png" alt=""><a href="simple-page.html">Сладости</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/loaf-of-bread-2.png" alt=""><a href="simple-page.html">Хачапури и лазанья</a></li>
+            <li class="product-categories-mob-li"><img class="product-categories-mob-li-img" src="img/sourdough.png" alt=""><a href="simple-page.html">Постное меню</a></li>
+        </ul>
+    </div>
+    <button class="product-categories-btn"><a href="#">ПОКАЗАТЬ ВСЕ</a></button>
+    <button class="product-categories-btn-mob"><a href="#">ПОКАЗАТЬ ВСЕ</a></button>
+</div>
+    
+<div class="popular">
+    <h3 class="popular-title">Самое популярное за последнее время</h3>
+    <img class="popular-img" src="img/line-with-cake.png" alt="">
+    <div class="popular-slider owl-carousel owl-theme owl-loaded">
+        <div class="popular-slider-item">
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-slider-item">
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-slider-item">
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-categories-block">
+                <img class="popular-categories-block-top-img" src="img/product-img.png" alt="">
+                <div class="popular-categories-block-middle">
+                    <p>Повышенное содержание белка</p>
+                </div>
+                <div class="popular-categories-block-bottom">
+                    <p class="popular-categories-block-bottom-text">Название данного товара в несколько строк текста</p>
+                </div>
+                <div class="popular-categories-block-modal">
+                    <p class="popular-categories-block-modal-text">
+                        Масса 500г. <br> Пищевая ценность (100г) <br> Белки, г - 5 <br> Жиры, г - 3.5 <br> Углеводы, г - 18 <br> Энерг. ценность, ккал - 345
+                    </p>
+                    <div class="popular-categories-block-modal-bottom">
+                        <p class="popular-categories-block-modal-bottom-text">4500 Р</p>
+                        <button class="popular-categories-block-modal-bottom-btn"><a href="#">В КОРЗИНУ</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="choice">
+    <h3 class="choice-title">Выбирая нас, Вы получите</h3>
+    <img class="choice-img" src="img/line-with-cake.png" alt="">
+    <div class="choice-wrap">
+        <div class="choice-block">
+            <img class="choice-block-img" src="img/choice-img.png" alt="">
+            <p class="choice-block-text">Натуральную продукцию</p>
+        </div>
+        <div class="choice-block">
+            <img class="choice-block-img" src="img/choice-img.png" alt="">
+            <p class="choice-block-text">Натуральную продукцию</p>
+        </div>
+        <div class="choice-block">
+            <img class="choice-block-img" src="img/choice-img.png" alt="">
+            <p class="choice-block-text">Натуральную продукцию</p>
+        </div>
+        <div class="choice-block">
+            <img class="choice-block-img" src="img/choice-img.png" alt="">
+            <p class="choice-block-text">Натуральную продукцию</p>
+        </div>
+        <div class="choice-block">
+            <img class="choice-block-img" src="img/choice-img.png" alt="">
+            <p class="choice-block-text">Натуральную продукцию</p>
+        </div>
+    </div>
+</div>
+    
+<div class="news">
+    <h3 class="news-title">Наши последние новости</h3>
+    <img class="news-img" src="img/line-with-cake.png" alt="">
+    <div class="news-wrap">
+        <a class="news-block" href="news-card.html">
+            <div>
+                <img class="news-block-img" src="img/news-img.png" alt="">
+                <div class="news-block-modal">
+                    <h3 class="news-block-modal-title">Очень важный, длинный заголовок, который все должны обязательно прочесть!</h3>
+                    <div class="news-block-modal-text-1">
+                        <img class="news-block-modal-text-img" src="img/calendar.png" alt="">
+                        <p class="news-block-modal-text-1-text">29 июня 2019 года</p>
+                    </div>
+                    <p class="news-block-modal-text-2">Краткий анонс данной публикации, имеющий в своем распоряжении целые три строки, иногда больше!</p>
+                </div>
+            </div>
+        </a>
+        <a class="news-block" href="news-card.html">
+            <div>
+                <img class="news-block-img" src="img/news-img.png" alt="">
+                <div class="news-block-modal">
+                    <h3 class="news-block-modal-title">Очень важный, длинный заголовок, который все должны обязательно прочесть!</h3>
+                    <div class="news-block-modal-text-1">
+                        <img class="news-block-modal-text-img" src="img/calendar.png" alt="">
+                        <p class="news-block-modal-text-1-text">29 июня 2019 года</p>
+                    </div>
+                    <p class="news-block-modal-text-2">Краткий анонс данной публикации, имеющий в своем распоряжении целые три строки, иногда больше!</p>
+                </div>
+            </div>
+        </a>
+        <a class="news-block" href="news-card.html">
+            <div>
+                <img class="news-block-img" src="img/news-img.png" alt="">
+                <div class="news-block-modal">
+                    <h3 class="news-block-modal-title">Очень важный, длинный заголовок, который все должны обязательно прочесть!</h3>
+                    <div class="news-block-modal-text-1">
+                        <img class="news-block-modal-text-img" src="img/calendar.png" alt="">
+                        <p class="news-block-modal-text-1-text">29 июня 2019 года</p>
+                    </div>
+                    <p class="news-block-modal-text-2">Краткий анонс данной публикации, имеющий в своем распоряжении целые три строки, иногда больше!</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <button class="news-btn"><a href="blog.html">ЧИТАТЬ ВСЕ</a></button>
+</div>
+    
+<div class="seo">
+    <p class="seo-text">Совсем немного очень важного SEO - текста, который поможет при продвижении сайта. Отображается не более одной строки. <a href="#" class="seo-text-red">Подробнее</a></p>
+</div>
+    
+<div class="footer">
+    <div class="footer-wrap footer-wrap-1">
+        <a class="footer-wrap-logo" href="index.html"><img src="img/Logo.svg" alt=""></a>
+        <p class="footer-wrap-1-text">Наши социальные сети</p>
+        <div class="footer-wrap-1-icon">
+            <a class="footer-wrap-1-icon-insta" href="http://instagram.com"></a>
+            <a class="footer-wrap-1-icon-twitter" href="http://twitter.com"></a>
+            <a class="footer-wrap-1-icon-youtube" href="http://youtube.com"></a>
+            <a class="footer-wrap-1-icon-facebook" href="http://facebook.com"></a>
+        </div>
+    </div>
+    <div class="footer-wrap footer-wrap-2">
+        <h3 class="footer-wrap-2-title">Навигация по сайту</h3>
+        <div class="footer-wrap-2-ul-wrap">
+            <ul class="footer-wrap-2-ul">
+                <li class="footer-wrap-2-li"><a href="index.html">Главная</a></li>
+                <li class="footer-wrap-2-li"><a href="ordering-cakes.html">Сделать заказ</a></li>
+                <li class="footer-wrap-2-li"><a href="catalog.html">Наш каталог</a></li>
+                <li class="footer-wrap-2-li"><a href="delivery.html">Доставка</a></li>
+            </ul>
+            <ul class="footer-wrap-2-ul">
+                <li class="footer-wrap-2-li"><a href="about.html">О компании</a></li>
+                <li class="footer-wrap-2-li"><a href="contacts.html">Контакты</a></li>
+                <li class="footer-wrap-2-li"><a href="contacts.html">Обратная связь</a></li>
+                <li class="footer-wrap-2-li"><a href="blog.html">Блог</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-wrap footer-wrap-3">
+        <h3 class="footer-wrap-3-title">Обратная связь</h3>
+        <a class="footer-wrap-3-text" href="#">Оставить отзыв о магазине, задать вопрос, спросить погоду или просто написать нам о чем думаете.</a>
+    </div>
+    <div class="footer-wrap footer-wrap-4">
+        <img class="footer-wrap-4-img" src="img/mastercard.png" alt="">
+        <img class="footer-wrap-4-img" src="img/mastercard.png" alt="">
+        <img class="footer-wrap-4-img" src="img/mastercard.png" alt="">
+        <img class="footer-wrap-4-img" src="img/mastercard.png" alt="">
+    </div>
+</div>
+    
+<div class="footer-bottom">
+    <p class="footer-bottom-text">Copyright © 2019 – <a href="#">Политика конфиденциальности</a> и <a href="#">согласие на обработку персональных данных</a></p>
+</div>
+   
+<div id="authorization-modal" class="authorization">
+    <div class="authorization-wrap">
+        <h3 class="authorization-title">Авторизация</h3>
+        <form class="authorization-form" action="">
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-name-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-name-input" id="name" name="name" type="name" placeholder="Ваш логин"/>
+            </div>
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-pass-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-pass-input" id="password" name="password" type="password" placeholder="Ваш пароль"/>
+            </div>
+            <button class="authorization-button" type="submit">Войти в профиль</button>
+        </form>
+        <a class="authorization-forget open-modal" rel="leanModal" href="#pass-modal">Забыли пароль?</a>
+        <a class="authorization-reg open-modal" rel="leanModal" href="#registration-modal">Зарегистрироваться</a>
+        <img class="modal_close" src="img/cancel.png" alt="">
+    </div>
+</div>
+   
+<div id="pass-modal" class="pass">
+    <div class="authorization-wrap">
+        <h3 class="authorization-title">Сброс пароля</h3>
+        <p class="pass-text">На указанный E-mail придет инструкция по восстановлению пароля</p>
+        <form class="authorization-form" action="">
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-mail-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-name-input" id="mail" name="mail" type="mail" placeholder="Ваш E-mail"/>
+            </div>
+            <button class="authorization-button" type="submit">Восстановить пароль</button>
+        </form>
+        <a class="authorization-forget" href="#">Забыли пароль?</a>
+        <a class="authorization-reg" href="#">Авторизоваться</a>
+        <img class="modal_close" src="img/cancel.png" alt="">
+    </div>
+</div>
+   
+<div id="registration-modal" class="registration">
+    <div class="authorization-wrap">
+        <h3 class="authorization-title">Регистрация</h3>
+        <form class="authorization-form" action="">
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-name-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-name-input" id="name" name="name" type="name" placeholder="Логин"/>
+            </div>
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-mail-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-name-input" id="mail" name="mail" type="mail" placeholder="Ваш E-mail"/>
+            </div>
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-pass-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-pass-input" id="password" name="password" type="password" placeholder="Пароль"/>
+            </div>
+            <div class="authorization-input-wrap">
+                <i class="authorization-input-icon authorization-pass-input-icon" aria-hidden="true"></i>
+                <input class="authorization-input authorization-pass-input" id="password" name="password" type="password" placeholder="Повторите пароль"/>
+            </div>
+            <button class="authorization-button" type="submit">Войти в профиль</button>
+        </form>
+        <a class="authorization-reg" href="#">Авторизоваться</a>
+        <img class="modal_close" src="img/cancel.png" alt="">
+    </div>
+</div>
+   
+<div id="checked-modal" class="checked">
+    <div class="authorization-wrap">
+        <img class="checked-img" src="img/checked.svg" alt="">
+        <h3 class="checked-title">Регистрация завершена!</h3>
+        <p class="checked-text">На указанный электронный адрес отправлена дальнейшая инструкция</p>
+        <img class="modal_close" src="img/cancel.png" alt="">
+    </div>
+</div>
+   
+<div id="exit-modal" class="exit">
+    <div class="authorization-wrap">
+        <h3 class="exit-title checked-title">Выход</h3>
+        <p class="exit-text checked-text">Выйти из профиля?</p>
+        <div class="exit-buttons-wrap">
+            <a class="exit-modal-btn button-cancel" href="#">Отмена</a>
+            <a class="exit-modal-btn button-exit" href="#">Выйти</a>
+        </div>
+        <img class="modal_close" src="img/cancel.png" alt="">
+    </div>
+</div>
+   
+<div id="shopping-cart" class="shopping-cart">
+    <div class="shopping-cart-wrap">
+        <h3 class="shopping-cart-title">Корзина товаров</h3>
+        <div class="shopping-cart-descriptions">
+            <p class="shopping-cart-descriptions-1">Продукция</p>
+            <p class="shopping-cart-descriptions-2">Цена</p>
+            <p class="shopping-cart-descriptions-3">Количество</p>
+            <p class="shopping-cart-descriptions-4">Сумма</p>
+        </div>
+        <div class="shopping-cart-goods-wrap">
+            <div data-cart-item="1" class="item">
+                <div class="shopping-cart-descriptions-mob">
+                    <p class="shopping-cart-descriptions-mob-1">Продукция</p>
+                    <p class="shopping-cart-descriptions-mob-2">Цена</p>
+                    <p class="shopping-cart-descriptions-mob-3">Количество</p>
+                    <p class="shopping-cart-descriptions-mob-4">Сумма</p>
+                </div>
+                <div class="shopping-cart-goods-wrap-elements">
+                    <a class="shopping-cart-goods-delete-btn" href="#"><img src="img/shop-cancel.svg" alt=""></a>
+                    <div class="shopping-cart-goods-img">
+                        <img src="img/shopping-cart-goods-img.png" alt="">
+                    </div>
+                    <div class="shopping-cart-goods-description">
+                        <p>Наименование данного товара <br> в две строки</p>
+                    </div>
+                    <div class="shopping-cart-goods-price">
+                        <p>1500 руб.</p>
+                    </div>
+                    <div class="shopping-cart-goods-quantity">
+                        <button class="minus-btn"><img src="img/shop-arrow-left.svg" alt=""></button>
+                        <input type="text" name="name" value="1" readonly>
+                        <button class="plus-btn"><img src="img/shop-arrow-right.svg" alt=""></button>
+                    </div>
+                    <div class="shopping-cart-goods-totalprice">
+                        <p>4500 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-cart-item="2" class="item">
+                <div class="shopping-cart-descriptions-mob">
+                    <p class="shopping-cart-descriptions-mob-1">Продукция</p>
+                    <p class="shopping-cart-descriptions-mob-2">Цена</p>
+                    <p class="shopping-cart-descriptions-mob-3">Количество</p>
+                    <p class="shopping-cart-descriptions-mob-4">Сумма</p>
+                </div>
+                <div class="shopping-cart-goods-wrap-elements">
+                    <a class="shopping-cart-goods-delete-btn" href="#"><img src="img/shop-cancel.svg" alt=""></a>
+                    <div class="shopping-cart-goods-img">
+                        <img src="img/shopping-cart-goods-img.png" alt="">
+                    </div>
+                    <div class="shopping-cart-goods-description">
+                        <p>Наименование данного товара <br> в две строки</p>
+                    </div>
+                    <div class="shopping-cart-goods-price">
+                        <p>1500 руб.</p>
+                    </div>
+                    <div class="shopping-cart-goods-quantity">
+                        <button class="minus-btn"><img src="img/shop-arrow-left.svg" alt=""></button>
+                        <input type="text" name="name" value="1" readonly>
+                        <button class="plus-btn"><img src="img/shop-arrow-right.svg" alt=""></button>
+                    </div>
+                    <div class="shopping-cart-goods-totalprice">
+                        <p>4500 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-cart-item="3"  class="item">
+                <div class="shopping-cart-descriptions-mob">
+                    <p class="shopping-cart-descriptions-mob-1">Продукция</p>
+                    <p class="shopping-cart-descriptions-mob-2">Цена</p>
+                    <p class="shopping-cart-descriptions-mob-3">Количество</p>
+                    <p class="shopping-cart-descriptions-mob-4">Сумма</p>
+                </div>
+                <div class="shopping-cart-goods-wrap-elements">
+                    <a class="shopping-cart-goods-delete-btn" href="#"><img src="img/shop-cancel.svg" alt=""></a>
+                    <div class="shopping-cart-goods-img">
+                        <img src="img/shopping-cart-goods-img.png" alt="">
+                    </div>
+                    <div class="shopping-cart-goods-description">
+                        <p>Наименование данного товара <br> в две строки</p>
+                    </div>
+                    <div class="shopping-cart-goods-price">
+                        <p>1500 руб.</p>
+                    </div>
+                    <div class="shopping-cart-goods-quantity">
+                        <button class="minus-btn"><img src="img/shop-arrow-left.svg" alt=""></button>
+                        <input type="text" name="name" value="1" readonly>
+                        <button class="plus-btn"><img src="img/shop-arrow-right.svg" alt=""></button>
+                    </div>
+                    <div class="shopping-cart-goods-totalprice">
+                        <p>4500 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-cart-goods-footer">
+            <a class="shopping-cart-goods-footer-firstbtn" href="#">ПРОДОЛЖИТЬ ПОКУПКУ</a>
+            <p class="shopping-cart-goods-footer-text">Итого: <span class="shopping-cart-goods-footer-text-red">12000</span> руб.</p>
+            <a class="shopping-cart-goods-footer-secondbtn" href="order.html">Перейти к ОФОРМЛЕНИЮ</a>
+        </div>
+        <img class="modal_close" src="img/cancel.png" alt="">
+    </div>
+</div>
+    
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.simpleLoadMore.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.leanModal.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
