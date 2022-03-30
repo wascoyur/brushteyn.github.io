@@ -34,14 +34,14 @@ galleryThumbs.on('transitionStart', function () {
     galleryMain.slideTo(galleryThumbs.activeIndex);
 });
 
-$(document).ready(function(){
-    $(".collapse.show").each(function(){
+$(document).ready(function () {
+    $(".collapse.show").each(function () {
         $(this).prev(".card-header").find(".element").addClass("minus").removeClass("plus");
     });
-    
-    $(".collapse").on('show.bs.collapse', function(){
+
+    $(".collapse").on('show.bs.collapse', function () {
         $(this).prev(".card-header").find(".element").removeClass("plus").addClass("minus");
-    }).on('hide.bs.collapse', function(){
+    }).on('hide.bs.collapse', function () {
         $(this).prev(".card-header").find(".element").removeClass("minus").addClass("plus");
     });
 });
