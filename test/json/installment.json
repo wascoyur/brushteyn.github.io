@@ -1,0 +1,179 @@
+{
+  "data": {
+    "seo": {
+      "title": "Рассрочка",
+      "description": "Рассрочка",
+      "keywords": null
+    },
+    "title": "Условия покупки",
+    "info": [
+      {
+        "id": 1,
+        "img": "/img/content/installment_img_1_1.jpg",
+        "title": "Процентная рассрочка",
+        "text": "Процентная рассрочка на 24 месяца под 1% в месяц на остаток (начисляется с 7 месяца оплаты рассрочки), при условии внесения первоначального взноса не менее 50% от стоимости квартиры по прайс-листу. В случае досрочной оплаты пересчет процентов не производится.",
+        "payment": "50",
+        "month": "24"
+      },
+      {
+        "id": 2,
+        "img": "/img/content/installment_img_1_2.jpg",
+        "title": "Беспроцентная рассрочка",
+        "text": "Беспроцентная рассрочка на 6 месяцев, при условии внесения первоначального взноса не менее 70% от стоимости квартиры поп райс-листу.",
+        "payment": "70",
+        "month": "6"
+      }
+    ],
+    "calc": {
+      "title": "Калькулятор рассрочки",
+      "description": "",
+      "ranges": {
+        "prices": [6700000, 15700000],
+        "months": [1, 30],
+        "percents": [10, 90],
+        "price_step": 10000,
+        "month_step": 1,
+        "initial_month_value": 5,
+        "initial_pay_percent": 10,
+        "initial_price": 10000000,
+        "items_limit": 3
+      },
+      "types_title": "Подходящие типы квартир",
+      "types": [
+        {
+          "id": 1,
+          "name": "001",
+          "area_from": 27.17,
+          "area_to": 27.6,
+          "price_from": 6000000,
+          "price_to": 8000000,
+          "bedrooms_count": 0,
+          "rooms_text": "Студия",
+          "floors": "4 - 26",
+          "count": "3 предложения",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/d8f/6wrnue011akj3wskhyufvf69fk2k3pkq.svg"
+        },
+        {
+          "id": 2,
+          "name": "002",
+          "area_from": 28.98,
+          "area_to": 30.23,
+          "price_from": 4000000,
+          "price_to": 7000000,
+          "bedrooms_count": 0,
+          "rooms_text": "Студия",
+          "floors": "3 - 26",
+          "count": "5 предложений",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/fd9/ut9eplsfh6swg6vnm0n81r21uzo3soih.svg"
+        },
+        {
+          "id": 3,
+          "name": "101",
+          "area_from": 39.44,
+          "area_to": 43.95,
+          "price_from": 7000000,
+          "price_to": 9000000,
+          "bedrooms_count": 1,
+          "rooms_text": "1 спальня",
+          "floors": "4 - 26",
+          "count": "14 предложений",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/f09/an13ghq00ubr10g9yh1s1e6t7zqmvtm4.svg"
+        },
+        {
+          "id": 4,
+          "name": "101з",
+          "area_from": 39.34,
+          "area_to": 39.71,
+          "price_from": 7000000,
+          "price_to": 10000000,
+          "bedrooms_count": 1,
+          "rooms_text": "1 спальня",
+          "floors": "18 - 26",
+          "count": "2 предложения",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/013/b21tda56yzl710duwy4usqg9hq6j9b3a.svg"
+        },
+        {
+          "id": 5,
+          "name": "101з",
+          "area_from": 39.34,
+          "area_to": 39.71,
+          "price_from": 7000000,
+          "price_to": 10000000,
+          "bedrooms_count": 1,
+          "rooms_text": "1 спальня",
+          "floors": "18 - 26",
+          "count": "2 предложения",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/013/b21tda56yzl710duwy4usqg9hq6j9b3a.svg"
+        },
+        {
+          "id": 7,
+          "name": "101з",
+          "area_from": 39.34,
+          "area_to": 39.71,
+          "price_from": 7000000,
+          "price_to": 14000000,
+          "bedrooms_count": 1,
+          "rooms_text": "1 спальня",
+          "floors": "18 - 26",
+          "count": "2 предложения",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/013/b21tda56yzl710duwy4usqg9hq6j9b3a.svg"
+        },
+        {
+          "id": 8,
+          "name": "101з",
+          "area_from": 39.34,
+          "area_to": 39.71,
+          "price_from": 7000000,
+          "price_to": 15000000,
+          "bedrooms_count": 1,
+          "rooms_text": "1 спальня",
+          "floors": "18 - 26",
+          "count": "2 предложения",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/013/b21tda56yzl710duwy4usqg9hq6j9b3a.svg"
+        },
+        {
+          "id": 4,
+          "name": "101з",
+          "area_from": 39.34,
+          "area_to": 39.71,
+          "price_from": 7000000,
+          "price_to": 12000000,
+          "bedrooms_count": 1,
+          "rooms_text": "1 спальня",
+          "floors": "18 - 26",
+          "count": "2 предложения",
+          "scheme": "http://api.tetris-kvartal-b.dev.blue-ant.ru/upload/uf/013/b21tda56yzl710duwy4usqg9hq6j9b3a.svg"
+        }
+      ]
+    },
+    "docs": {
+      "title": "Перечень необходимых документов",
+      "items": [
+        {
+          "id": 1,
+          "icon": "/img/content/purchase_icon_doc_1.svg",
+          "title": "Паспорт гражданина РФ",
+          "text": "Оригинал"
+        },
+        {
+          "id": 2,
+          "icon": "/img/content/purchase_icon_doc_2.svg",
+          "title": "Трудовая книжка",
+          "text": "Или другой документ, подтверждающий занятость (трудовой договор и т.п.)"
+        },
+        {
+          "id": 3,
+          "icon": "/img/content/purchase_icon_doc_3.svg",
+          "title": "Справка 2-НДФЛ",
+          "text": "Или другой документ, подтверждающий доход (справка по форме Банка, копия налоговой декларации и т.п.)"
+        },
+        {
+          "id": 4,
+          "icon": "/img/content/purchase_icon_doc_4.svg",
+          "title": "СНИЛС",
+          "text": "Для лиц мужского пола призывного возраста (для возможности учета доходов)"
+        }
+      ]
+    }
+  }
+}

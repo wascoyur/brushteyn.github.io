@@ -1,0 +1,35 @@
+{
+  "page": {
+    "seo": {
+      "title": "Контакты",
+      "description": "TerlePark – у каждого своя сказка!",
+      "keywords": null
+    },
+    "contacts": {
+      "address_object_html": "г. Уфа, ул. Авроры, д. 18, к. 1",
+      "address_office_html": "г. Уфа, ул. Энтузиастов, 7А",
+      "office_time_html": "9-20 без выходных",
+      "phones": [
+        {
+          "number": "+7 347 200-11-88"
+        }
+      ],
+      "emails": [
+        {
+          "address": "info@terlepark.ru"
+        }
+      ]
+    },
+    "form": {
+      "title": "Контакты",
+      "button_text": "Перезвоните мне",
+      "fields": ""
+    },
+    "mark": {
+      "coordinates": [55.817264, 37.34152]
+    },
+    "link": {
+      "url": "https://yandex.ru/maps/172/ufa/house/ulitsa_avrory_18k1/YU8YdgZgTk0DQFtufXtxeHlnZw==/?ll=56.011570%2C54.709235&z=16.45"
+    }
+  }
+}
