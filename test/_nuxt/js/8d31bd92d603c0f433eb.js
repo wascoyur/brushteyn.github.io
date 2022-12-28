@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[96],{750:function(e,n,r){"use strict";r.r(n);var t={name:"index",middleware:function(e){e.store;var n=e.redirect;e.$config;return n("/purchase/mortgage")}},c=r(51),component=Object(c.a)(t,(function(){return(0,this._self._c)("div")}),[],!1,null,"808cd108",null);n.default=component.exports}}]);
